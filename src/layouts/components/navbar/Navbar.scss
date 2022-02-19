@@ -1,0 +1,74 @@
+.fixed-top {
+  top: 0;
+  position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.navbar {
+  background-color: transparent;
+  height: 64px;
+  padding: 8px 0;
+
+  transition: all 0.6s ease 0s;
+
+  a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-wrapper {
+    height: 100%;
+    // 居中
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1140px;
+    // 子元素布局
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // mobile: resolution < 767px
+    @media (max-width: 767px) {
+      // TODO:
+    }
+
+    // desktop: resolution >= 768px
+    @media (min-width: 768px) {
+      a.navbar-title {
+        font-size: 20px;
+      }
+      // 隐藏mobile
+      .navbar-mobile {
+        display: none;
+      }
+      // 显示PC的menu
+      .navbar-desktop {
+        display: block;
+        // pc menu
+        .navbar-menu {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          a.navbar-menu-item {
+            font-size: 16px;
+            margin: 0 16px;
+            &:hover {
+              color: rgb(185, 185, 185);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar.solid {
+  background: linear-gradient(#0b5e81, #4e7fa2, #84a0ba);
+  box-shadow: 0 4px 18px 2px #84a0ba;
+}
