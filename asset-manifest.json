@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wzy-resume-react/static/css/main.70566b47.css",
-    "main.js": "/wzy-resume-react/static/js/main.0d588e76.js",
-    "static/js/787.e5da8e3b.chunk.js": "/wzy-resume-react/static/js/787.e5da8e3b.chunk.js",
-    "static/media/sthlm_sunset.jpeg": "/wzy-resume-react/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
-    "index.html": "/wzy-resume-react/index.html",
-    "main.70566b47.css.map": "/wzy-resume-react/static/css/main.70566b47.css.map",
-    "main.0d588e76.js.map": "/wzy-resume-react/static/js/main.0d588e76.js.map",
-    "787.e5da8e3b.chunk.js.map": "/wzy-resume-react/static/js/787.e5da8e3b.chunk.js.map"
+    "main.css": "/static/css/main.f876035b.css",
+    "main.js": "/static/js/main.80b4e2d5.js",
+    "static/js/787.e5da8e3b.chunk.js": "/static/js/787.e5da8e3b.chunk.js",
+    "static/media/sthlm_sunset.jpeg": "/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
+    "index.html": "/index.html",
+    "main.f876035b.css.map": "/static/css/main.f876035b.css.map",
+    "main.80b4e2d5.js.map": "/static/js/main.80b4e2d5.js.map",
+    "787.e5da8e3b.chunk.js.map": "/static/js/787.e5da8e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70566b47.css",
-    "static/js/main.0d588e76.js"
+    "static/css/main.f876035b.css",
+    "static/js/main.80b4e2d5.js"
   ]
 }
