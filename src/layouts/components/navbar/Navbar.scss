@@ -32,7 +32,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    // mobile: resolution < 767px
+    // mobile: resolution <= 767px
     @media (max-width: 767px) {
       // TODO:
     }
@@ -40,7 +40,8 @@
     // desktop: resolution >= 768px
     @media (min-width: 768px) {
       a.navbar-title {
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: 500;
       }
       // 隐藏mobile
       .navbar-mobile {
