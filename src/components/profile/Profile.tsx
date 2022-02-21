@@ -22,7 +22,7 @@ const Profile: FC = () => {
     <div className='profile' ref={profileRef} style={{backgroundPositionY: `calc(50% - ${parallexOffset}px)`}}>
       <div className='text'>
         <div className='title'>
-          <strong>Zheyun Wu</strong>
+          <span>Zheyun Wu</span>
         </div>
         <div className='subtitle'>
           Software Developer

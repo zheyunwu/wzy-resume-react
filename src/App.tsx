@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 import AllRoutes from './routes';
 
 const App: FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AllRoutes />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

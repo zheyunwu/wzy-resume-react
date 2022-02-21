@@ -7,10 +7,14 @@
 
 .navbar {
   background-color: transparent;
-  height: 64px;
+  height: 48px;
   padding: 8px 0;
 
-  transition: all 0.6s ease 0s;
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 
   a {
     text-decoration: none;
@@ -23,7 +27,7 @@
   .navbar-wrapper {
     height: 100%;
     // 居中
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
     max-width: 1140px;
     // 子元素布局

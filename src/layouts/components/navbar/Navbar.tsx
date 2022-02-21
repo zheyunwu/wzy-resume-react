@@ -1,4 +1,6 @@
 import { FC, useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './Navbar.scss';
 
@@ -22,9 +24,7 @@ const Navbar: FC = () => {
   return (
     <nav className={`navbar fixed-top ${solid ? 'solid' : ''}`} ref={navbarRef}>
       <div className="navbar-wrapper">
-        <a className="navbar-title" href="/">
-          Zheyun Wu
-        </a>
+        <Link className="navbar-title" to="/">Zheyun Wu</Link>
         {/* For mobile */}
         <div className="navbar-mobile">
           <input type="checkbox" />
@@ -32,21 +32,21 @@ const Navbar: FC = () => {
           <span id="s2"></span>
           <span id="s3"></span>
           <div className="navbar-menu-mobile">
-            <a className="navbar-menu-item" href="#profile">Profile</a>
-            <a className="navbar-menu-item" href="#education">Education</a>
-            <a className="navbar-menu-item" href="#experience">Experience</a>
-            <a className="navbar-menu-item" href="#skills">Skills</a>
-            <a className="navbar-menu-item" href="#contact">Contact</a>
+            <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
+            <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
+            <HashLink className="navbar-menu-item" to='/#experience'>Experience</HashLink>
+            <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
+            <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
           </div>
         </div>
         {/* For desktop */}
         <div className="navbar-desktop">
           <div className="navbar-menu">
-            <a className="navbar-menu-item" href="#profile">Profile</a>
-            <a className="navbar-menu-item" href="#education">Education</a>
-            <a className="navbar-menu-item" href="#experience">Experience</a>
-            <a className="navbar-menu-item" href="#skills">Skills</a>
-            <a className="navbar-menu-item" href="#contact">Contact</a>
+            <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
+            <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
+            <HashLink className="navbar-menu-item" to='/#experience'>Experience</HashLink>
+            <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
+            <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
           </div>
         </div>
       </div>
