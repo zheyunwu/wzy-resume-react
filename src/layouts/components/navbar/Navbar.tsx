@@ -10,7 +10,7 @@ const Navbar: FC = () => {
 
   const changeBackground = () => {
     const navbarHeight = navbarRef && navbarRef.current ? navbarRef.current.clientHeight : 0;
-    if (window.scrollY >= window.innerHeight - navbarHeight) {
+    if (window.scrollY >= 140) {
       setSolid(true);
     } else {
       setSolid(false);

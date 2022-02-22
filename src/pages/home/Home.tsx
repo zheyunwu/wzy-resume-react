@@ -16,6 +16,10 @@ const Home: FC = () => {
           <Education />
         </div>
       </section>
+
+      <section style={{textAlign: 'center', fontSize: '30px', color:'gray'}}>
+        to be developed...
+      </section>
     </div>
   )
 };
