@@ -1,6 +1,8 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import './Profile.scss';
 
+import TypewriterText from 'components/typewriter-text/TypewriterText';
+
 const Profile: FC = () => {
   const profileRef = useRef<HTMLDivElement>(null);
   const [parallexOffset, setparallexOffset] = useState(0);
@@ -22,10 +24,10 @@ const Profile: FC = () => {
     <div className='profile' ref={profileRef} style={{backgroundPositionY: `calc(50% - ${parallexOffset}px)`}}>
       <div className='text'>
         <div className='title'>
-          <span>Zheyun Wu</span>
+          <span>HI, I'M ZHEYUN WU</span>
         </div>
         <div className='subtitle'>
-          Software Developer
+          <TypewriterText>Software developer</TypewriterText>
         </div>
       </div>
     </div>
