@@ -1,6 +1,6 @@
 .education {
   width: 100%;
-  padding: 50px 16px;
+  padding: 50px 10px;
   .title {
     margin: 20px 0 70px;
     font-size: 48px;
@@ -67,3 +67,30 @@
     }
   }
 }
+
+  // Mobile
+  @media (max-width: 767px) {
+    .education {
+      padding: 30px 10px;
+      .title {
+        margin: 20px 0 50px;
+        font-size: 40px;
+      }
+      .content {
+        & > .event:not(:last-child) {
+          margin-bottom: 46px;
+        }
+        .event {
+          flex-direction: column;
+          .left {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 22px;
+          }
+          .right {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
