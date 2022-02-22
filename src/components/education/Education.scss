@@ -1,3 +1,70 @@
 .education {
-  height: 100vh;
+  width: 100%;
+  padding: 40px 0;
+  .title {
+    margin: 10px 0 50px;
+    font-size: 46px;
+    font-weight: 300;
+    text-align: center;
+    span {
+      box-shadow: inset 0px -18px 0px #a8cbe4;
+    }
+  }
+
+  .content {
+    padding: 10px;
+    & > .event:not(:last-child) {
+      margin-bottom: 60px;
+    }
+    .event {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .left {
+        width: 240px;
+        font-size: 14px;
+        .duration {
+          margin-top: 5px;
+          margin-bottom: 10px;
+          span {
+            padding: 0 5px;
+            color: #0b5e81;
+            border-color: #0b5e81;
+            border-style: solid;
+          }
+        }
+        .location {
+          color: #666666;
+        }
+      }
+      .right {
+        width: 600px;
+        .school-name {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 12px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          .school-logo {
+            width: 48px;
+            position: absolute;
+            top:0;
+            right:0;
+          }
+        }
+        .degree-major {
+          color: #666666;
+          font-size: 16px;
+          margin-bottom: 18px;
+        }
+        .description {
+          color: #363636;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
 }
