@@ -19,10 +19,21 @@
       letter-spacing: 1px;
       margin-bottom: 10px;
       font-weight: 600;
+      // Fade in down effect
+      opacity: 0;
+      transform: translateY(-15vh);
+      animation: fadeInDown 1.5s ease forwards;
     }
     .subtitle {
       font-size: 22px;
       font-family: 'Source Code Pro', monospace;
     }
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
