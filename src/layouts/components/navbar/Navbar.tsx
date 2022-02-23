@@ -10,7 +10,7 @@ const Navbar: FC = () => {
 
   const changeBackground = () => {
     const navbarHeight = navbarRef && navbarRef.current ? navbarRef.current.clientHeight : 0;
-    if (window.scrollY >= 140) {
+    if (window.scrollY >= window.innerHeight - navbarHeight) {
       setSolid(true);
     } else {
       setSolid(false);
@@ -34,7 +34,7 @@ const Navbar: FC = () => {
           <div className="navbar-menu-mobile">
             <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
             <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
-            <HashLink className="navbar-menu-item" to='/#experience'>Experience</HashLink>
+            <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
             <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
             <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
           </div>
@@ -44,7 +44,7 @@ const Navbar: FC = () => {
           <div className="navbar-menu">
             <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
             <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
-            <HashLink className="navbar-menu-item" to='/#experience'>Experience</HashLink>
+            <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
             <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
             <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
           </div>
