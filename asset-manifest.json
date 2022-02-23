@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.be9013eb.css",
-    "main.js": "/static/js/main.43a9021f.js",
+    "main.css": "/static/css/main.fa210cf0.css",
+    "main.js": "/static/js/main.8479f001.js",
     "static/js/787.e5da8e3b.chunk.js": "/static/js/787.e5da8e3b.chunk.js",
     "static/media/sthlm_sunset.jpeg": "/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
     "static/media/TKU_logo.png": "/static/media/TKU_logo.2c92a2ae857dfdecd218.png",
@@ -9,12 +9,12 @@
     "static/media/SU_logo.jpeg": "/static/media/SU_logo.408d31f16fc35f1e16f5.jpeg",
     "static/media/aalto_logo.png": "/static/media/aalto_logo.672c8c76dee5bb00a33d.png",
     "index.html": "/index.html",
-    "main.be9013eb.css.map": "/static/css/main.be9013eb.css.map",
-    "main.43a9021f.js.map": "/static/js/main.43a9021f.js.map",
+    "main.fa210cf0.css.map": "/static/css/main.fa210cf0.css.map",
+    "main.8479f001.js.map": "/static/js/main.8479f001.js.map",
     "787.e5da8e3b.chunk.js.map": "/static/js/787.e5da8e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be9013eb.css",
-    "static/js/main.43a9021f.js"
+    "static/css/main.fa210cf0.css",
+    "static/js/main.8479f001.js"
   ]
 }
