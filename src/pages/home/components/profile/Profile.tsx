@@ -27,7 +27,12 @@ const Profile: FC = () => {
           <span>HI, I'M ZHEYUN WU</span>
         </div>
         <div className='subtitle'>
-          <TypewriterText>Software developer</TypewriterText>
+          <TypewriterText
+            duration={5}
+            delay={1.5}
+            loop={true}
+          >Software Developer
+          </TypewriterText>
         </div>
       </div>
     </div>
