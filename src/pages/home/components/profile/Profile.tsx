@@ -1,41 +1,17 @@
-import { FC, useEffect, useState, useRef } from 'react';
-import './Profile.scss';
+import { FC } from 'react';
 
-import TypewriterText from 'components/typewriter-text/TypewriterText';
+import Parallax from 'components/parallax/Parallax';
+import STHLM_SUNSET from 'assets/sthlm_sunset.jpeg';
 
 const Profile: FC = () => {
-  const profileRef = useRef<HTMLDivElement>(null);
-  const [parallexOffset, setparallexOffset] = useState(0);
-
-
-  const handleScroll = () => {
-    setparallexOffset(window.scrollY * 0.7);
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <div className='profile' ref={profileRef} style={{backgroundPositionY: `calc(50% - ${parallexOffset}px)`}}>
-      <div className='text'>
-        <div className='title'>
-          <span>HI, I'M ZHEYUN WU</span>
-        </div>
-        <div className='subtitle'>
-          <TypewriterText
-            duration={5}
-            delay={1.5}
-            loop={true}
-          >Software Developer
-          </TypewriterText>
-        </div>
-      </div>
-    </div>
+    <Parallax
+        image={STHLM_SUNSET}
+        title="HI, I'M ZHEYUN WU"
+        subtitle='Software Developer'
+        fixed={false}
+    />
   )
 };
 
