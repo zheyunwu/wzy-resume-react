@@ -21,8 +21,11 @@
       justify-content: center;
 
       .left {
-        width: 240px;
         font-size: 14px;
+        @media (min-width: 768px) {
+          width: 180px;
+          margin-right: 60px;
+        }
         .duration {
           margin-top: 5px;
           margin-bottom: 10px;
@@ -38,7 +41,7 @@
         }
       }
       .right {
-        width: 600px;
+        width: 500px;
         .school-name {
           font-size: 20px;
           font-weight: 500;
@@ -71,7 +74,7 @@
 // Mobile
 @media (max-width: 767px) {
   .education {
-    padding: 40px 10px;
+    padding: 40px 16px;
     .title {
       margin: 20px 0 60px;
       font-size: 40px;
