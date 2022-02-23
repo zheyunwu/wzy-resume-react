@@ -3,6 +3,7 @@ import './Home.scss';
 
 import Profile from './components/profile/Profile';
 import Education from './components/education/Education';
+import WorkExperience from './components/work-experience/WorkExperience';
 
 const Home: FC = () => {
   return (
@@ -14,6 +15,12 @@ const Home: FC = () => {
       <section id='education'>
         <div className='content-container'>
           <Education />
+        </div>
+      </section>
+
+      <section id='work-experience'>
+        <div className='content-container'>
+          <WorkExperience />
         </div>
       </section>
 
