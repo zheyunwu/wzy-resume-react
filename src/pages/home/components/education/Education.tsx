@@ -2,6 +2,9 @@ import { FC } from 'react';
 import capitalize from 'utils/capitalize';
 
 import './Education.scss';
+
+import ContentBlock from 'components/content-block/ContentBlock';
+
 import KTH_LOGO from 'assets/KTH_logo.png';
 import Aalto_LOGO from 'assets/aalto_logo.png';
 import TKU_LOGO from 'assets/TKU_logo.png';
@@ -63,43 +66,44 @@ const dataList: Array<EducationData> = [
 const Education: FC = () => {
   return (
     <div className='education'>
-      <div className='title'>
-        <span>EDUCATION</span>
-      </div>
-      <div className='content'>
-        {dataList.map((item) => {
-          return (
-            <div className='event'>
-              <div className='left'>
-                <div className='duration'>
-                  <span>{`${item.start} - ${item.end}`}</span>
+      <ContentBlock
+        title='EDUCATION'
+      >
+        <div className='content'>
+          {dataList.map((item) => {
+            return (
+              <div className='event'>
+                <div className='left'>
+                  <div className='duration'>
+                    <span>{`${item.start} - ${item.end}`}</span>
+                  </div>
+                  <div className='location'>
+                    {item.location}
+                  </div>
                 </div>
-                <div className='location'>
-                  {item.location}
+                <div className='right'>
+                  <div className='school-name'>
+                    {item.school}
+                    <img className='school-logo' src={item.logo} alt='kth_logo'/>
+                  </div>
+
+                  <div className='degree-major'>
+                    {`(${capitalize(item.degree)}) ${item.major}`}
+                  </div>
+
+                  <div className='description'>
+                    <ul style={{listStylePosition: 'outside'}}>
+                      {item.description && <div dangerouslySetInnerHTML={{ __html: item.description }} />}
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div className='right'>
-                <div className='school-name'>
-                  {item.school}
-                  <img className='school-logo' src={item.logo} alt='kth_logo'/>
-                </div>
-
-                <div className='degree-major'>
-                  {`(${capitalize(item.degree)}) ${item.major}`}
-                </div>
-
-                <div className='description'>
-                  <ul style={{listStylePosition: 'outside'}}>
-                    {item.description && <div dangerouslySetInnerHTML={{ __html: item.description }} />}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </ContentBlock>
     </div>
-  )
+  );
 };
 
 export default Education;

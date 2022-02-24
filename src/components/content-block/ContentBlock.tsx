@@ -1,0 +1,20 @@
+import { FC } from 'react';
+
+import './ContentBlock.scss';
+
+interface ContentBlockProps {
+  title: string;
+}
+
+const ContentBlock: FC<ContentBlockProps> = ({title, children}) => {
+  return (
+    <div className='content-block'>
+      <div className='title'>
+        <span>{title}</span>
+      </div>
+      {children}
+    </div>
+  )
+};
+
+export default ContentBlock;

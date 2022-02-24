@@ -2,6 +2,8 @@ import { FC } from 'react';
 
 import './WorkExperience.scss';
 
+import ContentBlock from 'components/content-block/ContentBlock';
+
 interface WorkExperienceData {
   company: string;
   position: string;
@@ -49,42 +51,43 @@ const dataList: Array<WorkExperienceData> = [
 const WorkExperience: FC = () => {
   return (
     <div className='work-experience'>
-      <div className='title'>
-        <span>WORK EXPERIENCE</span>
-      </div>
-      <div className='content'>
-        {dataList.map((item) => {
-          return (
-            <div className='event'>
-              <div className='left'>
-                <div className='duration'>
-                  <span>{`${item.start} - ${item.end}`}</span>
+      <ContentBlock
+        title='WORK EXPERIENCE'
+      >
+        <div className='content'>
+          {dataList.map((item) => {
+            return (
+              <div className='event'>
+                <div className='left'>
+                  <div className='duration'>
+                    <span>{`${item.start} - ${item.end}`}</span>
+                  </div>
+                  <div className='location'>
+                    {item.location}
+                  </div>
                 </div>
-                <div className='location'>
-                  {item.location}
+                <div className='right'>
+                  <div className='employer'>
+                    {item.company}
+                  </div>
+
+                  <div className='position'>
+                    {`${item.position}`}
+                  </div>
+
+                  <div className='description'>
+                    <ul style={{listStylePosition: 'outside'}}>
+                      {item.description && <div dangerouslySetInnerHTML={{ __html: item.description }} />}
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div className='right'>
-                <div className='employer'>
-                  {item.company}
-                </div>
-
-                <div className='position'>
-                  {`${item.position}`}
-                </div>
-
-                <div className='description'>
-                  <ul style={{listStylePosition: 'outside'}}>
-                    {item.description && <div dangerouslySetInnerHTML={{ __html: item.description }} />}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </ContentBlock>
     </div>
-  )
+  );
 };
 
 export default WorkExperience;
