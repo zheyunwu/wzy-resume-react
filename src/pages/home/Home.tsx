@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import './Home.scss';
 
 import Profile from './components/profile/Profile';
@@ -9,6 +9,8 @@ import WorkExperience from './components/work-experience/WorkExperience';
 import STHLM_SEA1 from '../../assets/sthlm_sea1.jpeg';
 
 const Home: FC = () => {
+  useEffect(() => { document.title='Zheyun | CV' }, []);
+
   return (
     <div className='home'>
       <section id='profile'>
