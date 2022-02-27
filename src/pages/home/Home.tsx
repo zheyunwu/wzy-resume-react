@@ -26,6 +26,7 @@ const Home: FC = () => {
       <section>
         <Parallax
           image={STHLM_SEA1}
+          fixed={false}
         />
       </section>
 

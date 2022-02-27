@@ -14,11 +14,10 @@ const Parallax: FC<ParallaxProps> = ({image, title, subtitle, fixed=true}) => {
   const pRef = useRef<HTMLDivElement>(null);
   const [parallaxOffset, setParallaxOffset] = useState(0);
 
-
   const handleScroll = () => {
-    console.log(pRef.current?.scrollBy)
     if (pRef && pRef.current) {
-      setParallaxOffset(window.scrollY * 0.7);
+      const top = pRef.current?.getClientRects()[0].top;
+      setParallaxOffset(-top * 0.6);
     }
   }
 
