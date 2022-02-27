@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2a5bfce.css",
+    "main.css": "/static/css/main.2d15b777.css",
     "main.js": "/static/js/main.b06ec228.js",
     "static/js/787.e5da8e3b.chunk.js": "/static/js/787.e5da8e3b.chunk.js",
     "static/media/sthlm_sea1.jpeg": "/static/media/sthlm_sea1.c6b670f2d3ca6d12d377.jpeg",
@@ -10,12 +10,12 @@
     "static/media/SU_logo.jpeg": "/static/media/SU_logo.408d31f16fc35f1e16f5.jpeg",
     "static/media/aalto_logo.png": "/static/media/aalto_logo.672c8c76dee5bb00a33d.png",
     "index.html": "/index.html",
-    "main.c2a5bfce.css.map": "/static/css/main.c2a5bfce.css.map",
+    "main.2d15b777.css.map": "/static/css/main.2d15b777.css.map",
     "main.b06ec228.js.map": "/static/js/main.b06ec228.js.map",
     "787.e5da8e3b.chunk.js.map": "/static/js/787.e5da8e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2a5bfce.css",
+    "static/css/main.2d15b777.css",
     "static/js/main.b06ec228.js"
   ]
 }
