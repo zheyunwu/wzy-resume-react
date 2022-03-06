@@ -12,7 +12,7 @@ const Profile: FC = () => {
         subtitle='Software Developer'
         fixed={false}
     />
-  )
+  );
 };
 
 export default Profile;
