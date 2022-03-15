@@ -1,0 +1,42 @@
+$maxWidthMobile: 767px;
+$minWidthPC: 768px;
+
+.skills {
+  .row {
+    display: flex;
+  
+    // Mobile
+    @media (max-width: $maxWidthMobile) {
+      flex-direction: column;
+    }
+    // PC
+    @media (min-width: $minWidthPC) {
+      flex-direction: row;
+    }
+    .col {
+      flex: 1;
+      .skills-container {
+        max-width: 400px;
+        .heading {
+          font-size: 25px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .skills-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .skill-item {
+      margin: 0 10px;
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
