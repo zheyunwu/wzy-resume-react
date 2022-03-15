@@ -3,6 +3,9 @@ import { FC } from 'react';
 import './WorkExperience.scss';
 
 import ContentBlock from 'components/content-block/ContentBlock';
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 interface WorkExperienceData {
   company: string;
@@ -63,7 +66,7 @@ const WorkExperience: FC = () => {
                     <span>{`${item.start} - ${item.end}`}</span>
                   </div>
                   <div className='location'>
-                    {item.location}
+                    <FontAwesomeIcon icon={faLocationDot} /> {item.location}
                   </div>
                 </div>
                 <div className='right'>

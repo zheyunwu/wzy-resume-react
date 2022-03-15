@@ -10,6 +10,10 @@ import Aalto_LOGO from 'assets/aalto_logo.png';
 import TKU_LOGO from 'assets/TKU_logo.png';
 import SU_LOGO from 'assets/SU_logo.jpeg';
 
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
 interface EducationData {
   school: string;
   degree: 'bachelor' | 'master' | 'exchange student';
@@ -78,7 +82,7 @@ const Education: FC = () => {
                     <span>{`${item.start} - ${item.end}`}</span>
                   </div>
                   <div className='location'>
-                    {item.location}
+                  <FontAwesomeIcon icon={faLocationDot} /> {item.location}
                   </div>
                 </div>
                 <div className='right'>
