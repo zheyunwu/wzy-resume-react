@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc43fa97.css",
-    "main.js": "/static/js/main.ee7d7d04.js",
+    "main.css": "/static/css/main.2e945af6.css",
+    "main.js": "/static/js/main.84bd28fa.js",
     "static/js/787.e5da8e3b.chunk.js": "/static/js/787.e5da8e3b.chunk.js",
     "static/media/sthlm_sea1.jpeg": "/static/media/sthlm_sea1.c6b670f2d3ca6d12d377.jpeg",
     "static/media/sthlm_sunset.jpeg": "/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
@@ -10,12 +10,12 @@
     "static/media/SU_logo.jpeg": "/static/media/SU_logo.408d31f16fc35f1e16f5.jpeg",
     "static/media/aalto_logo.png": "/static/media/aalto_logo.672c8c76dee5bb00a33d.png",
     "index.html": "/index.html",
-    "main.dc43fa97.css.map": "/static/css/main.dc43fa97.css.map",
-    "main.ee7d7d04.js.map": "/static/js/main.ee7d7d04.js.map",
+    "main.2e945af6.css.map": "/static/css/main.2e945af6.css.map",
+    "main.84bd28fa.js.map": "/static/js/main.84bd28fa.js.map",
     "787.e5da8e3b.chunk.js.map": "/static/js/787.e5da8e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc43fa97.css",
-    "static/js/main.ee7d7d04.js"
+    "static/css/main.2e945af6.css",
+    "static/js/main.84bd28fa.js"
   ]
 }
