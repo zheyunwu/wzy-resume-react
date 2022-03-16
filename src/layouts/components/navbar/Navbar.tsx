@@ -36,7 +36,7 @@ const Navbar: FC = () => {
             <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
             <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
             <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
-            <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
+            <HashLink className="navbar-menu-item" to='/#contact'>Contact</HashLink>
           </div>
         </div>
         {/* For desktop */}
@@ -46,7 +46,7 @@ const Navbar: FC = () => {
             <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
             <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
             <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
-            <HashLink className="navbar-menu-item" to='/#contacts'>Contacts</HashLink>
+            <HashLink className="navbar-menu-item" to='/#contact'>Contact</HashLink>
           </div>
         </div>
       </div>
