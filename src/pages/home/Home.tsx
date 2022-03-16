@@ -6,6 +6,7 @@ import Parallax from 'components/parallax/Parallax';
 import Education from './components/education/Education';
 import WorkExperience from './components/work-experience/WorkExperience';
 import Skills from './components/skills/Skills';
+import Contact from './components/contact/Contact';
 
 import STHLM_SEA1 from '../../assets/sthlm_sea1.jpeg';
 
@@ -28,6 +29,10 @@ const Home: FC = () => {
 
       <section id='skills' className='content-container'>
         <Skills />
+      </section>
+
+      <section id='contact' className='content-container'>
+        <Contact />
       </section>
 
       <section>

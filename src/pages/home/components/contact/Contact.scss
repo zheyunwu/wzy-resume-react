@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  .contact-container {
+
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+    }
+    .contact-item-value {
+      color: #666666;
+    }
+  }
+}
