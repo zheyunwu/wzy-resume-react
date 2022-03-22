@@ -4,7 +4,7 @@ import './WorkExperience.scss';
 
 import ContentBlock from 'components/content-block/ContentBlock';
 // Icons
-import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface WorkExperienceData {
