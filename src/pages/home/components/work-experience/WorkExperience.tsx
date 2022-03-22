@@ -4,8 +4,8 @@ import './WorkExperience.scss';
 
 import ContentBlock from 'components/content-block/ContentBlock';
 // Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faLink } from '@fortawesome/free-solid-svg-icons';
 
 interface WorkExperienceData {
   company: string;
@@ -14,11 +14,22 @@ interface WorkExperienceData {
   end: string;
   location: string;
   description?: string;
+  company_link?: string;
 }
 
 const dataList: Array<WorkExperienceData> = [
   {
+    company: 'LiangDao Intelligence Vehicle Technology',
+    company_link: 'https://www.liangdao.ai/en/',
+    position: 'Master Thesis Worker',
+    start: 'April 2022',
+    end: 'Present',
+    location: 'Berlin, Germany',
+    description: '<li>Thesis Topic: Computing Cluster of Autonomous Driving Data</li>'
+  },
+  {
     company: 'Logical Clocks',
+    company_link: 'https://www.logicalclocks.com/',
     position: 'Frontend Developer (part-time)',
     start: 'Oct 2021',
     end: 'Jan 2022',
@@ -27,6 +38,7 @@ const dataList: Array<WorkExperienceData> = [
   },
   {
     company: 'Tesla (Giga-factory 3)',
+    company_link: 'https://www.tesla.com/',
     position: 'Software Engineer Intern',
     start: 'Jul 2021',
     end: 'Sep 2021',
@@ -42,7 +54,7 @@ const dataList: Array<WorkExperienceData> = [
     description: '<li>Tech Stack: <u>Vue / Python Flask / PostgreSQL / Minio / Docker</u></li>'
   },
   {
-    company: 'Chunghwa Telecom Laboratories - Zhongxin Network',
+    company: 'Chunghwa Telecom Laboratories · Zhongxin Network',
     position: 'Crawler Development Intern',
     start: 'Oct 2021',
     end: 'Jan 2022',
@@ -70,12 +82,12 @@ const WorkExperience: FC = () => {
                   </div>
                 </div>
                 <div className='right'>
-                  <div className='employer'>
-                    {item.company}
-                  </div>
-
                   <div className='position'>
                     {`${item.position}`}
+                  </div>
+
+                  <div className='employer'>
+                    @ {item.company } {item.company_link && <a href={item.company_link} target="_blank" rel="noreferrer"><FontAwesomeIcon size='xs' icon={faLink} /></a>}
                   </div>
 
                   <div className='description'>

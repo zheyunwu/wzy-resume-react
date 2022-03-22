@@ -31,7 +31,7 @@
       }
       .right {
         width: 500px;
-        .employer {
+        .position {
           font-size: 20px;
           font-weight: 500;
           margin-bottom: 12px;
@@ -39,10 +39,14 @@
           justify-content: space-between;
           position: relative;
         }
-        .position {
+        .employer {
           color: #666666;
           font-size: 16px;
           margin-bottom: 18px;
+          a {
+            margin-left: 5px;
+            color: #666666;
+          }
         }
         .description {
           color: #363636;
