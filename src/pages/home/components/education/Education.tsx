@@ -16,7 +16,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 interface EducationData {
   school: string;
-  degree: 'bachelor' | 'master' | 'exchange student';
+  degree: 'Bachelor' | 'Master' | 'Study Abroad';
   major: string;
   start: string;
   end: string;
@@ -28,7 +28,7 @@ interface EducationData {
 const dataList: Array<EducationData> = [
   {
     school: 'KTH Royal Institute of Technology',
-    degree: 'master',
+    degree: 'Master',
     major: 'Cloud and Network Infrastructures',
     start: 'Sep 2021',
     end: 'Present',
@@ -38,7 +38,7 @@ const dataList: Array<EducationData> = [
   },
   {
     school: 'Aalto University',
-    degree: 'master',
+    degree: 'Master',
     major: 'Cloud and Network Infrastructures',
     start: 'Sep 2020',
     end: 'Jun 2021',
@@ -48,7 +48,7 @@ const dataList: Array<EducationData> = [
   },
   {
     school: 'Stockholm University',
-    degree: 'exchange student',
+    degree: 'Study Abroad',
     major: 'Department of Computer and System Sciences (DSV)',
     start: 'Jan 2019',
     end: 'Jun 2019',
@@ -57,7 +57,7 @@ const dataList: Array<EducationData> = [
   },
   {
     school: 'Tamkang University',
-    degree: 'bachelor',
+    degree: 'Bachelor',
     major: 'Information Management',
     start: 'Sep 2015',
     end: 'Jun 2019',

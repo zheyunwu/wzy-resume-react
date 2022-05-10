@@ -21,15 +21,15 @@ const dataList: Array<WorkExperienceData> = [
   {
     company: 'LiangDao Intelligence Vehicle Technology',
     company_link: 'https://www.liangdao.ai/en/',
-    position: 'Master Thesis Worker',
+    position: "Master's Thesis Worker",
     start: 'April 2022',
     end: 'Present',
     location: 'Berlin, Germany',
-    description: '<li>Thesis Topic: Computing Cluster of Autonomous Driving Data</li>'
+    description: '<li>Topic: Computing Cluster of Autonomous Driving Data</li>'
   },
   {
-    company: 'Logical Clocks',
-    company_link: 'https://www.logicalclocks.com/',
+    company: 'Hopsworks',
+    company_link: 'https://www.hopsworks.ai/',
     position: 'Frontend Developer (part-time)',
     start: 'Oct 2021',
     end: 'Jan 2022',
@@ -37,16 +37,16 @@ const dataList: Array<WorkExperienceData> = [
     description: '<li>Tech Stack: <u>React (TypeScript)</u></li>'
   },
   {
-    company: 'Tesla (Giga-factory 3)',
+    company: 'Tesla (Giga-factory Shanghai)',
     company_link: 'https://www.tesla.com/',
     position: 'Software Engineer Intern',
     start: 'Jul 2021',
     end: 'Sep 2021',
-    location: 'Shanghai',
+    location: 'Shanghai, China',
     description: '<li>Tech Stack: <u>Angular (Typescript) / .NET (C#)</u></li>'
   },
   {
-    company: 'Siqian Software Studio',
+    company: 'Siqian Software',
     position: 'Software Developer',
     start: 'Jan 2020',
     end: 'Jan 2021',
