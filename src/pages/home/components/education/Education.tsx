@@ -16,7 +16,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 interface EducationData {
   school: string;
-  degree: 'Bachelor' | 'Master' | 'Study Abroad';
+  degree: 'Bachelor' | 'Master' | 'Exchange Student';
   major: string;
   start: string;
   end: string;
@@ -29,9 +29,9 @@ const dataList: Array<EducationData> = [
   {
     school: 'KTH Royal Institute of Technology',
     degree: 'Master',
-    major: 'Cloud and Network Infrastructures',
+    major: 'Computer Science and Engineering',
     start: 'Sep 2021',
-    end: 'Present',
+    end: 'Dec 2022',
     location: 'Stockholm, Sweden',
     description: '<li><b>Courses</b>: Modern Methods in Software Engineering, Data Mining, Scalable Machine Learning and Deep Learning, Theory and Methodology of Science with Applications</li>',
     logo: KTH_LOGO
@@ -39,7 +39,7 @@ const dataList: Array<EducationData> = [
   {
     school: 'Aalto University',
     degree: 'Master',
-    major: 'Cloud and Network Infrastructures',
+    major: 'Computer Science and Engineering',
     start: 'Sep 2020',
     end: 'Jun 2021',
     location: 'Helsinki, Finland',
@@ -48,7 +48,7 @@ const dataList: Array<EducationData> = [
   },
   {
     school: 'Stockholm University',
-    degree: 'Study Abroad',
+    degree: 'Exchange Student',
     major: 'Computer and System Sciences (DSV)',
     start: 'Jan 2019',
     end: 'Jun 2019',
