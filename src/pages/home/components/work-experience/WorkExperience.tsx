@@ -20,12 +20,21 @@ interface WorkExperienceData {
 const dataList: Array<WorkExperienceData> = [
   {
     company: 'LiangDao Intelligence Vehicle Technology',
-    company_link: 'https://www.liangdao.ai/en/',
-    position: "Master's Thesis Worker",
-    start: 'April 2022',
+    company_link: 'https://www.liangdao.de/',
+    position: "Software Engineer",
+    start: 'Jan 2023',
     end: 'Present',
     location: 'Berlin, Germany',
-    description: '<li>Topic: Computing Cluster of Autonomous Driving Data</li>'
+    description: '<li>Tech Stack: <u>Docker / Kubernetes / Argo Workflows</u></li>'
+  },
+  {
+    company: 'LiangDao Intelligence Vehicle Technology',
+    company_link: 'https://www.liangdao.de/',
+    position: "Master's Thesis Worker",
+    start: 'Apr 2022',
+    end: 'Dec 2022',
+    location: 'Berlin, Germany',
+    description: '<li>Tech Stack: <u>Docker / Kubernetes</u></li>'
   },
   {
     company: 'Hopsworks',

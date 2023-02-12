@@ -8,7 +8,7 @@ import ContentBlock from 'components/content-block/ContentBlock';
 import KTH_LOGO from 'assets/KTH_logo.png';
 import Aalto_LOGO from 'assets/aalto_logo.png';
 import TKU_LOGO from 'assets/TKU_logo.png';
-import SU_LOGO from 'assets/SU_logo.jpeg';
+import SU_LOGO from 'assets/SU_logo2.png';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,7 +49,7 @@ const dataList: Array<EducationData> = [
   {
     school: 'Stockholm University',
     degree: 'Study Abroad',
-    major: 'Department of Computer and System Sciences (DSV)',
+    major: 'Computer and System Sciences (DSV)',
     start: 'Jan 2019',
     end: 'Jun 2019',
     location: 'Stockholm, Sweden',
