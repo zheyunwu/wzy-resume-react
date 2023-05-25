@@ -45,12 +45,11 @@ const Parallax: FC<ParallaxProps> = ({image, title, subtitle, fixed=true}) => {
         {subtitle && (
           <div className='subtitle'>
             <TypewriterText
+              text={subtitle}
               duration={5}
               delay={1.5}
               loop={true}
-            >
-              {subtitle}
-            </TypewriterText>
+            />
           </div>
         )}
       </div>

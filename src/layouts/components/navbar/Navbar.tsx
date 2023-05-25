@@ -1,6 +1,6 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+// import { Link } from 'react-router-hash-link';
 
 import './Navbar.scss';
 
@@ -32,21 +32,21 @@ const Navbar: FC = () => {
           <span id="s2"></span>
           <span id="s3"></span>
           <div className="navbar-menu-mobile">
-            <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
-            <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
-            <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
-            <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
-            <HashLink className="navbar-menu-item" to='/#contact'>Contact</HashLink>
+            <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
+            <Link className="navbar-menu-item" to='/#education'>Education</Link>
+            <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
+            <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
+            <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
           </div>
         </div>
         {/* For desktop */}
         <div className="navbar-desktop">
           <div className="navbar-menu">
-            <HashLink className="navbar-menu-item" to='/#profile'>Profile</HashLink>
-            <HashLink className="navbar-menu-item" to='/#education'>Education</HashLink>
-            <HashLink className="navbar-menu-item" to='/#work-experience'>Work Experience</HashLink>
-            <HashLink className="navbar-menu-item" to='/#skills'>Skills</HashLink>
-            <HashLink className="navbar-menu-item" to='/#contact'>Contact</HashLink>
+            <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
+            <Link className="navbar-menu-item" to='/#education'>Education</Link>
+            <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
+            <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
+            <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
           </div>
         </div>
       </div>

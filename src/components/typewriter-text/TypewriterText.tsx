@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import './TypewriterText.scss';
 
 interface TypewriterTextProps {
+  text: string;
   duration?: number;
   delay?: number;
   loop?: boolean;
@@ -10,7 +11,7 @@ interface TypewriterTextProps {
 
 const TypewriterText: FC<TypewriterTextProps> = (props) => {
   const {
-    children,
+    text,
     duration=5,
     delay=0,
     loop=false
@@ -25,7 +26,7 @@ const TypewriterText: FC<TypewriterTextProps> = (props) => {
   return (
     <div className='typing-container'>
       <div className='typing-wrapper' style={styles.typingEffect}>
-        {children}
+        {text}
       </div>
     </div>
   );

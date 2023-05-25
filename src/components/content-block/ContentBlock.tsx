@@ -4,9 +4,10 @@ import './ContentBlock.scss';
 
 interface ContentBlockProps {
   title: string;
+  children: React.ReactNode;
 }
 
-const ContentBlock: FC<ContentBlockProps> = ({title, children}) => {
+const ContentBlock: FC<ContentBlockProps> = ({ title, children }) => {
   return (
     <div className='content-block'>
       <div className='title'>
