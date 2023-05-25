@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Layouts
 import VerticalLayouts from "layouts/vertical/VerticalLayout";
@@ -7,13 +7,22 @@ import VerticalLayouts from "layouts/vertical/VerticalLayout";
 // Pages
 import Home from "pages/home/Home";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <VerticalLayouts />,
+    children: [
+      {
+        path: "",
+        element: <Home />
+      }
+    ]
+  }
+]);
+
 const AllRoutes: FC = () => {
   return (
-    <Routes>
-      <Route path="/" element={<VerticalLayouts />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
+    <RouterProvider router={router} />
   );
 };
 
