@@ -8,7 +8,7 @@ import WorkExperience from './components/work-experience/WorkExperience';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 
-import STHLM_SEA1 from '../../assets/sthlm_sea1.jpeg';
+import STHLM_SEA1 from 'assets/sthlm_sea1.jpeg';
 
 const Home: FC = () => {
   useEffect(() => { document.title='Zheyun Wu' }, []);

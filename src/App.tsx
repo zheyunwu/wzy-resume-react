@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import AllRoutes from './routes';
+import AllRoutes from 'app/routes';
 
 const App: FC = () => {
   return (
