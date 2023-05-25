@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 import './Navbar.scss';
 
+
+import { useAppDispatch, useAppSelector } from 'store/hooks';
+import { selectAuth, AuthState, logout } from 'store/slices/authSlice';
+
 const Navbar: FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const [solid, setSolid] = useState<boolean>(false);
@@ -21,11 +25,21 @@ const Navbar: FC = () => {
     window.addEventListener('scroll', changeBackground);
   }, []);
 
+  // Auth state
+  const authState: AuthState = useAppSelector<AuthState>(selectAuth);
+  const dispatch = useAppDispatch();
+
+  // Logout handler
+  const handleLogout = () => {
+    dispatch(logout());
+  }
+
+
   return (
     <nav className={`navbar fixed-top ${solid ? 'solid' : ''}`} ref={navbarRef}>
       <div className="navbar-wrapper">
         <Link className="navbar-title" to="/">Zheyun Wu</Link>
-        {/* For mobile */}
+        {/* Menu for mobile */}
         <div className="navbar-mobile">
           <input type="checkbox" />
           <span id="s1"></span>
@@ -39,7 +53,7 @@ const Navbar: FC = () => {
             <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
           </div>
         </div>
-        {/* For desktop */}
+        {/* Menu for desktop */}
         <div className="navbar-desktop">
           <div className="navbar-menu">
             <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
@@ -49,6 +63,14 @@ const Navbar: FC = () => {
             <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
           </div>
         </div>
+        {/* Admin panel */}
+        {authState.isLoggedin && (
+          <div className="navbar-right">
+            Hi, {authState.email}! &nbsp;
+            <Link className="navbar-right-btn" to='/admin'>Admin</Link>
+            <button className="navbar-right-btn" onClick={handleLogout}>Logout</button>
+          </div>
+        )}
       </div>
     </nav>
   )

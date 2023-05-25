@@ -1,8 +1,8 @@
 import { ReactNode, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useAppSelector } from 'app/hooks';
-import { selectAuth } from 'app/store/slices/authSlice';
-import { AuthState } from 'app/store/slices/authSlice';
+import { useAppSelector } from 'store/hooks';
+import { selectAuth } from 'store/slices/authSlice';
+import { AuthState } from 'store/slices/authSlice';
 
 
 // Define the type for the component props

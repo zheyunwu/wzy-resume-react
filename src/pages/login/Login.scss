@@ -50,3 +50,9 @@
 .login-btn:hover {
   background-color: #0056b3;
 }
+
+// when the login-btn is disabled, change the color to grey
+.login-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

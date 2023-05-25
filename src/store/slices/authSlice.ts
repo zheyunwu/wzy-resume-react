@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootState } from 'app/store/store';
-import { setLocalState, clearLocalState } from 'app/localStorage';
+import { RootState } from 'store';
+import { setLocalState, clearLocalState } from 'store/localStorage';
 
 export interface LoginPayload {
   email: string,

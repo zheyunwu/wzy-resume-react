@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import { getLocalState } from 'app/localStorage';
+import { getLocalState } from './localStorage';
 import authReducer from './slices/authSlice';
 
 // Prepare data from localstorage
