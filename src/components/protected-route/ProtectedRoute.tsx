@@ -20,7 +20,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
 
   useEffect(() => {
     if (!isLoggedin) {
-      navigate('/login', { state: { from: location } });
+      navigate('/admin/login', { state: { from: location } });
     }
   }, [isLoggedin, navigate, location]);
 

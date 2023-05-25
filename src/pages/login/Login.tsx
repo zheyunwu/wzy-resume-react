@@ -34,7 +34,7 @@ function Login() {
     alert("Login sucessfully!");
 
     // Navigate to home page
-    navigate('/');
+    navigate('/admin');
   }
 
 
@@ -52,7 +52,6 @@ function Login() {
             type="email"
             id="email"
             required
-            autoComplete='off'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
