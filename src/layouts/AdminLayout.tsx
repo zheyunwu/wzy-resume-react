@@ -9,7 +9,6 @@ const AdminLayout: FC = () => {
     <>
       <ScrollToHashElement />
       <Navbar />
-      <div style={{ paddingTop: '64px', backgroundColor: 'gray' }} />
       <Outlet />
     </>
   );

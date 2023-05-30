@@ -13,7 +13,8 @@ interface ProtectedRouteProps {
 // This is a route guard component
 const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
   const authState: AuthState = useAppSelector(selectAuth);
-  const { isLoggedin } = authState;
+  const { status } = authState;
+  const isLoggedin = status === 'loggedIn';
   
   const navigate = useNavigate();
   const location = useLocation();

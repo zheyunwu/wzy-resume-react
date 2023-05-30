@@ -4,37 +4,44 @@ import './Login.scss';  // Importing our SASS styles
 import { useNavigate } from 'react-router-dom';
 
 import { useState } from 'react';
-import { useAppDispatch } from 'store/hooks';
-import { LoginPayload, login } from 'store/slices/authSlice';
+import { useAppDispatch, useAppSelector } from 'store/hooks';
+import { LoginPayload, loginEmailPassword, selectAuth } from 'store/slices/authSlice';
 
 import { isValidEmail } from 'utils/validators';
 
 function Login() {
+  const authState = useAppSelector(selectAuth);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event: React.FormEvent) => {
+  
+
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault(); // Prevent page refresh
   
     // Trim inputs
     setEmail(email.trim());
     setPassword(password.trim());
 
-    // Compose paylaod
+    // Compose login paylaod
     const payload: LoginPayload = {
       email: email,
       password: password,
     };
 
     // Dispatch 'login' action
-    dispatch(login(payload));
-    alert("Login sucessfully!");
+    await dispatch(loginEmailPassword(payload));
 
-    // Navigate to home page
-    navigate('/admin');
+    // Check auth status
+    
+    if (authState.status === 'loggedIn') {
+      navigate('/admin');
+    } else if (authState.status === 'failed') {
+      alert(authState.error);
+    }
   }
 
 
@@ -45,6 +52,9 @@ function Login() {
     <div className="container">
       <form className="login-form">
         <h2 className="login-title">Login</h2>
+        {/* {authState.status}
+        <h2>HAHAHA</h2>
+        {authState.error} */}
         <div className="input-group">
           <label className="label" htmlFor="email">Email</label>
           <input

@@ -8,9 +8,36 @@ import './Navbar.scss';
 import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { selectAuth, AuthState, logout } from 'store/slices/authSlice';
 
-const Navbar: FC = () => {
+const navLinks = [
+  {
+    title: 'Profile',
+    path: '/#profile',
+  },
+  {
+    title: 'Education',
+    path: '/#education',
+  },
+  {
+    title: 'Work Experience',
+    path: '/#work-experience',
+  },
+  {
+    title: 'Skills',
+    path: '/#skills',
+  },
+  {
+    title: 'Contact',
+    path: '/#contact',
+  }
+]
+
+interface NavbarProps {
+  dynamicBackground?: boolean;
+}
+
+const Navbar: FC<NavbarProps> = ({ dynamicBackground=false }) => {
   const navbarRef = useRef<HTMLDivElement>(null);
-  const [solid, setSolid] = useState<boolean>(false);
+  const [solid, setSolid] = useState<boolean>(!dynamicBackground);
 
   const changeBackground = () => {
     const navbarHeight = navbarRef && navbarRef.current ? navbarRef.current.clientHeight : 0;
@@ -22,8 +49,10 @@ const Navbar: FC = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
-  }, []);
+    if (dynamicBackground) {
+      window.addEventListener('scroll', changeBackground);
+    }
+  }, [dynamicBackground]);
 
   // Auth state
   const authState: AuthState = useAppSelector<AuthState>(selectAuth);
@@ -46,27 +75,23 @@ const Navbar: FC = () => {
           <span id="s2"></span>
           <span id="s3"></span>
           <div className="navbar-menu-mobile">
-            <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
-            <Link className="navbar-menu-item" to='/#education'>Education</Link>
-            <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
-            <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
-            <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
+            {navLinks && navLinks.map(link =>
+              <Link className="navbar-menu-item" to={link.path}>{link.title}</Link>
+            )}
           </div>
         </div>
         {/* Menu for desktop */}
         <div className="navbar-desktop">
           <div className="navbar-menu">
-            <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
-            <Link className="navbar-menu-item" to='/#education'>Education</Link>
-            <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
-            <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
-            <Link className="navbar-menu-item" to='/#contact'>Contact</Link>
+            {navLinks && navLinks.map(link =>
+              <Link className="navbar-menu-item" to={link.path}>{link.title}</Link>
+            )}
           </div>
         </div>
         {/* Admin panel */}
-        {authState.isLoggedin && (
+        {authState.status === 'loggedIn' && (
           <div className="navbar-right">
-            Hi, {authState.email}! &nbsp;
+            Hi, {authState.user.email}! &nbsp;
             <Link className="navbar-right-btn" to='/admin'>Admin</Link>
             <button className="navbar-right-btn" onClick={handleLogout}>Logout</button>
           </div>

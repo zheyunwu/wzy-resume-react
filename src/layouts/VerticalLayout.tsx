@@ -8,7 +8,7 @@ const VerticalLayouts: FC = () => {
   return (
     <>
       <ScrollToHashElement />
-      <Navbar />
+      <Navbar dynamicBackground={true} />
       <Outlet />
     </>
   );
