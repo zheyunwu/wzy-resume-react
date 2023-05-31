@@ -4,13 +4,12 @@ import './Login.scss';  // Importing our SASS styles
 import { useNavigate } from 'react-router-dom';
 
 import { useState } from 'react';
-import { useAppDispatch, useAppSelector } from 'store/hooks';
-import { LoginPayload, loginEmailPassword, selectAuth } from 'store/slices/authSlice';
+import { useAppDispatch } from 'store/hooks';
+import { LoginPayload, loginEmailPassword } from 'store/slices/authSlice';
 
 import { isValidEmail } from 'utils/validators';
 
 function Login() {
-  const authState = useAppSelector(selectAuth);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
@@ -33,14 +32,15 @@ function Login() {
     };
 
     // Dispatch 'login' action
-    await dispatch(loginEmailPassword(payload));
+    let response = await dispatch(loginEmailPassword(payload));
 
-    // Check auth status
-    
-    if (authState.status === 'loggedIn') {
+    // Check result
+    if (response.meta.requestStatus === 'fulfilled') {
+      alert("Login successful");
       navigate('/admin');
-    } else if (authState.status === 'failed') {
-      alert(authState.error);
+    } else if (response.meta.requestStatus === 'rejected') {
+      const { error } : any = response;
+      alert(error.message.split(':')[2].trim());
     }
   }
 
