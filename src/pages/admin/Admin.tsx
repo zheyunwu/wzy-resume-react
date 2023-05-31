@@ -1,5 +1,8 @@
 import { FC, useEffect, useState } from 'react';
-import { Container, Box, Tab, Tabs, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Container, Box, Tab, Tabs, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, IconButton, Switch } from '@mui/material';
+import { Edit, Delete} from '@mui/icons-material';
+
+import capitalize from 'utils/capitalize';
 
 interface EducationData {
   school: string;
@@ -31,7 +34,7 @@ const educationData: EducationData[] = [
     end: 'Dec 2022',
     location: 'Stockholm, Sweden',
     description: '<li><b>Courses</b>: Modern Methods in Software Engineering, Data Mining, Scalable Machine Learning and Deep Learning, Theory and Methodology of Science with Applications</li>',
-    logo: ''
+    logo: 'https://github.com/zheyunwu/wzy-resume-react/blob/master/src/assets/KTH_logo.png?raw=true'
   },
   {
     school: 'Aalto University',
@@ -41,7 +44,7 @@ const educationData: EducationData[] = [
     end: 'Jun 2021',
     location: 'Helsinki, Finland',
     description: '<li><b>Courses</b>: Cloud Software and Systems, Internet Traffic Measurements and Analysis, Web Software Development, Big Data Platforms, Internet Protocols, Software-Defined Networking, Cybersecurity</li>',
-    logo: ''
+    logo: 'https://github.com/zheyunwu/wzy-resume-react/blob/master/src/assets/aalto_logo.png?raw=true'
   },
   {
     school: 'Stockholm University',
@@ -50,7 +53,8 @@ const educationData: EducationData[] = [
     start: 'Jan 2019',
     end: 'Jun 2019',
     location: 'Stockholm, Sweden',
-    logo: ''
+    description: '',
+    logo: 'https://github.com/zheyunwu/wzy-resume-react/blob/dev/src/assets/SU_logo2.png?raw=true'
   },
   {
     school: 'Tamkang University',
@@ -60,7 +64,7 @@ const educationData: EducationData[] = [
     end: 'Jun 2019',
     location: 'Tamsui, Taiwan',
     description: '<li><b>GPA</b>: 3.959/4.0 (Class Rank: 1/67, Dept. Rank: 1/206)</li><li><b>Courses</b>: Calculus, Statistics, Fundamentals of Computer Programming (C), Programming and Data Structures (Java), Algorithms, Database Design, Network and Communication, Operating Systems, Advanced Object-Oriented Programming (Java + Design patterns), System Analysis and Design</li>',
-    logo: ''
+    logo: 'https://github.com/zheyunwu/wzy-resume-react/blob/master/src/assets/TKU_logo.png?raw=true'
   }
 ];
 
@@ -134,8 +138,10 @@ const Admin: FC = () => {
         <TableHead>
           <TableRow>
             {Object.keys(data[0]).map((key) => (
-              <TableCell key={key}>{key}</TableCell>
+              <TableCell key={key}>{capitalize(key)}</TableCell>
             ))}
+            <TableCell>Actions</TableCell>
+            <TableCell>Visible</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -144,6 +150,20 @@ const Admin: FC = () => {
               {Object.values(item).map((value, index) => (
                 <TableCell key={index}>{value}</TableCell>
               ))}
+              <TableCell>
+                <IconButton aria-label="edit">
+                  <Edit />
+                </IconButton>
+                <IconButton aria-label="delete">
+                  <Delete />
+                </IconButton>
+              </TableCell>
+              <TableCell>
+                <Switch
+                  defaultChecked
+                  inputProps={{ 'aria-label': 'controlled' }}
+                />
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -152,9 +172,9 @@ const Admin: FC = () => {
   );
 
   return (
-    <Container maxWidth='lg'>
+    <Container maxWidth='lg' sx={{ marginTop: '64px', paddingY: '20px' }}>
       <Box>
-        <Paper>
+        <Paper sx={{ marginBottom: '80px' }}>
           <Tabs value={activeTab} onChange={handleChange}>
             <Tab label="Education" />
             <Tab label="Work Experience" />
