@@ -19,7 +19,7 @@ const Contact: FC = () => {
           </div>
           <div className='contact-item'>
             {getIcon(IconName.github)}
-            <a href='https://github.com/crispinwzy/' className='contact-item-value'>https://github.com/zheyunwu/</a>
+            <a href='https://github.com/zheyunwu/' className='contact-item-value'>https://github.com/zheyunwu/</a>
           </div>
           <div className='contact-item'>
             {getIcon(IconName.linkedin)}
