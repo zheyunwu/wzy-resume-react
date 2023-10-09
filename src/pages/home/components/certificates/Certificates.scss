@@ -1,0 +1,12 @@
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  .certificates-item {
+    width: 180px;
+    height: 180px;
+    // gap between items
+    margin: 0 30px;
+    cursor: pointer;
+  }
+}

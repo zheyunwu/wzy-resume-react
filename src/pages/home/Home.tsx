@@ -3,6 +3,7 @@ import './Home.scss';
 
 import Profile from './components/profile/Profile';
 import Parallax from 'components/parallax/Parallax';
+import Certificates from './components/certificates/Certificates';
 import Education from './components/education/Education';
 import WorkExperience from './components/work-experience/WorkExperience';
 import Skills from './components/skills/Skills';
@@ -17,6 +18,10 @@ const Home: FC = () => {
     <div className='home'>
       <section id='profile'>
         <Profile />
+      </section>
+
+      <section id='certificates' className='content-container'>
+        <Certificates />
       </section>
 
       <section id='education' className='content-container'>
