@@ -33,6 +33,7 @@ const Navbar: FC = () => {
           <span id="s3"></span>
           <div className="navbar-menu-mobile">
             <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
+            <Link className="navbar-menu-item" to='/#certificates'>Certificates</Link>
             <Link className="navbar-menu-item" to='/#education'>Education</Link>
             <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
             <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
@@ -43,6 +44,7 @@ const Navbar: FC = () => {
         <div className="navbar-desktop">
           <div className="navbar-menu">
             <Link className="navbar-menu-item" to='/#profile'>Profile</Link>
+            <Link className="navbar-menu-item" to='/#certificates'>Certificates</Link>
             <Link className="navbar-menu-item" to='/#education'>Education</Link>
             <Link className="navbar-menu-item" to='/#work-experience'>Work Experience</Link>
             <Link className="navbar-menu-item" to='/#skills'>Skills</Link>
