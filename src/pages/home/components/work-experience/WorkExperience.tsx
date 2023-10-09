@@ -25,7 +25,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Jan 2023',
     end: 'Present',
     location: 'Berlin, Germany',
-    description: '<li>Tech Stack: <u>Docker / Kubernetes / Argo Workflows</u></li>'
+    description: '<li>Tech Stack: <u>Docker • Kubernetes • Argo Workflows • Python • React • Node.js • AWS</u></li>'
   },
   {
     company: 'LiangDao Intelligence Vehicle Technology',
@@ -34,7 +34,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Apr 2022',
     end: 'Dec 2022',
     location: 'Berlin, Germany',
-    description: '<li>Tech Stack: <u>Docker / Kubernetes</u></li>'
+    description: '<li>Tech Stack: <u>Docker • Kubernetes • GitLab CI/CD • Python</u></li>'
   },
   {
     company: 'Hopsworks',
@@ -43,7 +43,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Oct 2021',
     end: 'Jan 2022',
     location: 'Stockholm, Sweden',
-    description: '<li>Tech Stack: <u>React (TypeScript)</u></li>'
+    description: '<li>Tech Stack: <u>React (TypeScript) • Redux</u></li>'
   },
   {
     company: 'Tesla (Giga-factory Shanghai)',
@@ -52,7 +52,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Jul 2021',
     end: 'Sep 2021',
     location: 'Shanghai, China',
-    description: '<li>Tech Stack: <u>Angular (Typescript) / .NET (C#)</u></li>'
+    description: '<li>Tech Stack: <u>Angular (TypeScript) • .NET (C#)</u></li>'
   },
   {
     company: 'Siqian Software',
@@ -60,7 +60,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Jan 2020',
     end: 'Jan 2021',
     location: 'Taiwan (Remote)',
-    description: '<li>Tech Stack: <u>Vue / Python Flask / PostgreSQL / Minio / Docker</u></li>'
+    description: '<li>Tech Stack: <u>Vue (JavaScript) • Flask (Python) • PostgreSQL • Minio • Docker</u></li>'
   },
   {
     company: 'Chunghwa Telecom Laboratories · Zhongxin Network',
@@ -68,7 +68,7 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Oct 2021',
     end: 'Jan 2022',
     location: 'Taiwan',
-    description: '<li>Tech Stack: <u>Python Scrapy</u></li>'
+    description: '<li>Tech Stack: <u>Scrapy (Python)</u></li>'
   },
 ];
 
