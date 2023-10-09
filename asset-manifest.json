@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.97d019bc.css",
-    "main.js": "/static/js/main.fc90883a.js",
+    "main.css": "/static/css/main.87690347.css",
+    "main.js": "/static/js/main.41d63bc0.js",
     "static/js/496.98a1910b.chunk.js": "/static/js/496.98a1910b.chunk.js",
     "static/media/sthlm_sea1.jpeg": "/static/media/sthlm_sea1.c6b670f2d3ca6d12d377.jpeg",
     "static/media/sthlm_sunset.jpeg": "/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
     "static/media/TKU_logo.png": "/static/media/TKU_logo.2c92a2ae857dfdecd218.png",
     "static/media/SU_logo2.png": "/static/media/SU_logo2.91f474a73c8a5b1d8d9e.png",
     "static/media/KTH_logo.png": "/static/media/KTH_logo.0a9c36aff643c1c7da24.png",
+    "static/media/aws-cloud-practitioner.png": "/static/media/aws-cloud-practitioner.feb9a7f4874c4148a366.png",
     "static/media/aalto_logo.png": "/static/media/aalto_logo.672c8c76dee5bb00a33d.png",
+    "static/media/aws-developer.png": "/static/media/aws-developer.da9861980f5b9d7004a6.png",
     "index.html": "/index.html",
-    "main.97d019bc.css.map": "/static/css/main.97d019bc.css.map",
-    "main.fc90883a.js.map": "/static/js/main.fc90883a.js.map",
+    "main.87690347.css.map": "/static/css/main.87690347.css.map",
+    "main.41d63bc0.js.map": "/static/js/main.41d63bc0.js.map",
     "496.98a1910b.chunk.js.map": "/static/js/496.98a1910b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.97d019bc.css",
-    "static/js/main.fc90883a.js"
+    "static/css/main.87690347.css",
+    "static/js/main.41d63bc0.js"
   ]
 }
