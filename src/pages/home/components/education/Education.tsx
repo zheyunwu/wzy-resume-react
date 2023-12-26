@@ -88,7 +88,7 @@ const Education: FC = () => {
                 <div className='right'>
                   <div className='school-name'>
                     {item.school}
-                    <img className='school-logo' src={item.logo} alt='kth_logo'/>
+                    <img className='school-logo' src={item.logo} alt='school logo'/>
                   </div>
 
                   <div className='degree-major'>

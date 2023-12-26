@@ -3,6 +3,11 @@ import { FC } from 'react';
 import './WorkExperience.scss';
 
 import ContentBlock from 'components/content-block/ContentBlock';
+
+import TESLA_LOGO from 'assets/tesla_logo.png';
+import HW_LOGO from 'assets/hopsworks_logo.png';
+import LD_LOGO from 'assets/liangdao_logo.jpeg';
+
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faLink } from '@fortawesome/free-solid-svg-icons';
@@ -15,26 +20,29 @@ interface WorkExperienceData {
   location: string;
   description?: string;
   company_link?: string;
+  logo?: string;
 }
 
 const dataList: Array<WorkExperienceData> = [
   {
-    company: 'LiangDao Intelligence Vehicle Technology',
+    company: 'LiangDao GmbH',
     company_link: 'https://www.liangdao.de/',
-    position: "Software Engineer",
+    position: "Fullstack Engineer",
     start: 'Jan 2023',
-    end: 'Present',
+    end: 'Jan 2024',
     location: 'Berlin, Germany',
-    description: '<li>Tech Stack: <u>Docker • Kubernetes • Argo Workflows • Python • React • Node.js • AWS</u></li>'
+    description: '<li>Tech Stack: <u>Docker • Kubernetes • Python • React • Node.js • AWS</u></li>',
+    logo: LD_LOGO
   },
   {
-    company: 'LiangDao Intelligence Vehicle Technology',
+    company: 'LiangDao GmbH',
     company_link: 'https://www.liangdao.de/',
     position: "Master's Thesis Worker",
     start: 'Apr 2022',
     end: 'Dec 2022',
     location: 'Berlin, Germany',
-    description: '<li>Tech Stack: <u>Docker • Kubernetes • GitLab CI/CD • Python</u></li>'
+    description: '<li>Tech Stack: <u>Docker • Kubernetes • GitLab CI/CD • Python</u></li>',
+    logo: LD_LOGO
   },
   {
     company: 'Hopsworks',
@@ -43,7 +51,8 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Oct 2021',
     end: 'Jan 2022',
     location: 'Stockholm, Sweden',
-    description: '<li>Tech Stack: <u>React (TypeScript) • Redux</u></li>'
+    description: '<li>Tech Stack: <u>React (TypeScript) • Redux</u></li>',
+    logo: HW_LOGO
   },
   {
     company: 'Tesla (Giga-factory Shanghai)',
@@ -52,7 +61,8 @@ const dataList: Array<WorkExperienceData> = [
     start: 'Jul 2021',
     end: 'Sep 2021',
     location: 'Shanghai, China',
-    description: '<li>Tech Stack: <u>Angular (TypeScript) • .NET (C#)</u></li>'
+    description: '<li>Tech Stack: <u>Angular (TypeScript) • .NET (C#)</u></li>',
+    logo: TESLA_LOGO
   },
   {
     company: 'Siqian Software',
@@ -93,6 +103,7 @@ const WorkExperience: FC = () => {
                 <div className='right'>
                   <div className='position'>
                     {`${item.position}`}
+                    {item.logo && <img className='company-logo' src={item.logo} alt='company logo'/>}
                   </div>
 
                   <div className='employer'>

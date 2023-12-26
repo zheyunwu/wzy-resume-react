@@ -38,6 +38,12 @@
           display: flex;
           justify-content: space-between;
           position: relative;
+          .company-logo {
+            width: 48px;
+            position: absolute;
+            top:0;
+            right:0;
+          }
         }
         .employer {
           color: #666666;
