@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.17a80a01.css",
-    "main.js": "/static/js/main.6236626c.js",
+    "main.css": "/static/css/main.d8c50939.css",
+    "main.js": "/static/js/main.9b299108.js",
     "static/js/496.98a1910b.chunk.js": "/static/js/496.98a1910b.chunk.js",
     "static/media/sthlm_sea1.jpeg": "/static/media/sthlm_sea1.c6b670f2d3ca6d12d377.jpeg",
     "static/media/sthlm_sunset.jpeg": "/static/media/sthlm_sunset.1f5a20ead3b0ca7ada86.jpeg",
@@ -9,16 +9,17 @@
     "static/media/SU_logo2.png": "/static/media/SU_logo2.91f474a73c8a5b1d8d9e.png",
     "static/media/KTH_logo.png": "/static/media/KTH_logo.0a9c36aff643c1c7da24.png",
     "static/media/aws-cloud-practitioner.png": "/static/media/aws-cloud-practitioner.feb9a7f4874c4148a366.png",
+    "static/media/tesla_logo.png": "/static/media/tesla_logo.a7f4d496b3479a3231bc.png",
     "static/media/aws-solution-architect.png": "/static/media/aws-solution-architect.c28c518452880a5fdfe4.png",
     "static/media/aalto_logo.png": "/static/media/aalto_logo.672c8c76dee5bb00a33d.png",
     "static/media/aws-developer.png": "/static/media/aws-developer.da9861980f5b9d7004a6.png",
     "index.html": "/index.html",
-    "main.17a80a01.css.map": "/static/css/main.17a80a01.css.map",
-    "main.6236626c.js.map": "/static/js/main.6236626c.js.map",
+    "main.d8c50939.css.map": "/static/css/main.d8c50939.css.map",
+    "main.9b299108.js.map": "/static/js/main.9b299108.js.map",
     "496.98a1910b.chunk.js.map": "/static/js/496.98a1910b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17a80a01.css",
-    "static/js/main.6236626c.js"
+    "static/css/main.d8c50939.css",
+    "static/js/main.9b299108.js"
   ]
 }
