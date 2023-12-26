@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Layouts
-import VerticalLayouts from "layouts/vertical/VerticalLayout";
+import VerticalLayouts from "layouts/VerticalLayout";
 
 // Pages
 import Home from "pages/home/Home";
